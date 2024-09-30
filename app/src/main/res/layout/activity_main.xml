@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/Toast"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0000FF"
+        android:text="Toast"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/countAffiche"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFF0"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#0000FF"
+        android:textSize="250dp"
+        app:layout_constraintBottom_toTopOf="@id/count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Toast" />
+
+    <Button
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0000FF"
+        android:text="Count"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
